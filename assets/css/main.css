@@ -2271,9 +2271,11 @@ body.landing #page-wrapper {
 
 /* Banner */
 #banner {
+  position: relative;
   background-attachment: scroll,							fixed;
-  background-color: #666;
-  background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+  background-color: rgba(0,0,0,0.5);
+  /* background-color: #666; */
+  /* background-image: url("images/overlay.png"), url("../../images/banner.jpg"); */
   background-position: top left,						center center;
   background-repeat: repeat,							no-repeat;
   background-size: auto,							cover;
@@ -2317,8 +2319,20 @@ body.landing #page-wrapper {
       background: #fff;
       color: #666 !important; }
 
+#banner #video-background {
+  position: absolute;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -1;
+}
+
 /* Main */
 #main {
+  position: relative;
   padding: 4em 0; }
   #main > header {
     text-align: center;
